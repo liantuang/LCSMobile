@@ -56,3 +56,11 @@ D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\o
 D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\obj\iPhoneSimulator\Debug\LCSMobile.iOS.csproj.CopyComplete
 D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\obj\iPhoneSimulator\Debug\LCSMobile.iOS.exe
 D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\obj\iPhoneSimulator\Debug\LCSMobile.iOS.pdb
+D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\bin\iPhoneSimulator\Debug\Amqp.Net.dll
+D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\bin\iPhoneSimulator\Debug\CFX.dll
+D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+D:\MD3Projects\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile\LCSMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll

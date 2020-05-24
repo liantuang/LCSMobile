@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Validators="clr-namespace:XamarinFormValidator.Validators.Implementations"
+             xmlns:Behaviors="clr-namespace:XamarinFormValidator.Behaviors"
+             xmlns:local="clr-namespace:LCSMobile.ViewModel"
+             mc:Ignorable="d"
+             x:Class="LCSMobile.View.CFXSettingPage">
+
+    
+    <ContentPage.Content>        
+        <StackLayout Margin="5,5,15,5">
+            <StackLayout.Behaviors>
+                <Behaviors:ValidationGroupBehavior x:Name="form"/>
+            </StackLayout.Behaviors>
+            <StackLayout.BindingContext>
+                <local:CFXSettingViewModel />
+            </StackLayout.BindingContext>
+            <Label Text="Broker"/>
+            <Entry x:Name="BorkerAddress"  Placeholder="Broker Address" Text="{Binding CFXSettingModel.BrokerAddress, Mode=TwoWay}">
+                <Entry.Behaviors>
+                    <Behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                        <Behaviors:ValidationBehavior.Validators>
+                            <Validators:RequiredValidator />
+                        </Behaviors:ValidationBehavior.Validators>
+                    </Behaviors:ValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
+
+            <Label Text="Exchange"/>
+            <Entry x:Name="Exchange" Placeholder="Exhange" Text="{Binding CFXSettingModel.Exchange, Mode=TwoWay}">
+                <Entry.Behaviors>
+                    <Behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                        <Behaviors:ValidationBehavior.Validators>
+                            <Validators:RequiredValidator />
+                        </Behaviors:ValidationBehavior.Validators>
+                    </Behaviors:ValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
+
+            <Label Text="Queue"/>
+            <Entry x:Name="Queue" Placeholder="Queue" Text="{Binding CFXSettingModel.Queue }">
+                <Entry.Behaviors>
+                    <Behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                        <Behaviors:ValidationBehavior.Validators>
+                            <Validators:RequiredValidator />
+                        </Behaviors:ValidationBehavior.Validators>
+                    </Behaviors:ValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <Label Text="User"/>
+            <Entry x:Name="CFXUser" Placeholder="CFX User" Text="{Binding CFXSettingModel.CFXUser}">
+                <Entry.Behaviors>
+                    <Behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                        <Behaviors:ValidationBehavior.Validators>
+                            <Validators:RequiredValidator />
+                        </Behaviors:ValidationBehavior.Validators>
+                    </Behaviors:ValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <Label Text="Password"/>
+            <Entry x:Name="CFXPassword" Placeholder="CFX Password" IsPassword="True" Text="{Binding CFXSettingModel.CFXPassword, Mode=TwoWay}">
+                <Entry.Behaviors>
+                    <Behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                        <Behaviors:ValidationBehavior.Validators>
+                            <Validators:RequiredValidator />
+                        </Behaviors:ValidationBehavior.Validators>
+                    </Behaviors:ValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <Label x:Name="ErrorLabel"  Text="{Binding Result}" TextColor="{Binding ResultColor}"/>
+            <Button Text="Save" CornerRadius="3" Command="{Binding SaveCommand}" BackgroundColor="LimeGreen" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

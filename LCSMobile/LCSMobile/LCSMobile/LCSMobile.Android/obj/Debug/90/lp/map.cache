@@ -1,4 +1,9 @@
 FormsViewGroup
+SQLitePCLRaw.batteries_green
+SQLitePCLRaw.batteries_v2
+SQLitePCLRaw.core
+SQLitePCLRaw.lib.e_sqlite3
+SQLitePCLRaw.provider.e_sqlite3
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common
@@ -37,5 +42,15 @@ Xamarin.Android.Support.Vector.Drawable
 Xamarin.Android.Support.VersionedParcelable
 Xamarin.Android.Support.ViewPager
 Xamarin.Essentials
+Xamarin.Firebase.Common
+Xamarin.Firebase.Iid
+Xamarin.Firebase.Iid.Interop
+Xamarin.Firebase.Measurement.Connector
+Xamarin.Firebase.Messaging
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
+Xamarin.Google.AutoValue.Annotations
+Xamarin.GooglePlayServices.Base
+Xamarin.GooglePlayServices.Basement
+Xamarin.GooglePlayServices.Stats
+Xamarin.GooglePlayServices.Tasks

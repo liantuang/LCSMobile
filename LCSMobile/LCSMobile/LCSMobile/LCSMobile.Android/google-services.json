@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "935105275079",
+    "firebase_url": "https://nutekmobilelcs.firebaseio.com",
+    "project_id": "nutekmobilelcs",
+    "storage_bucket": "nutekmobilelcs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935105275079:android:9e9542751e9c7ba2530ae2",
+        "android_client_info": {
+          "package_name": "com.nutek.lcsmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935105275079-qag4182kh5iv6vcelp1pqbstnrfm959o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdvw0H_c5sXtrgNXjer9R0OvAx9isEFwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935105275079-qag4182kh5iv6vcelp1pqbstnrfm959o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

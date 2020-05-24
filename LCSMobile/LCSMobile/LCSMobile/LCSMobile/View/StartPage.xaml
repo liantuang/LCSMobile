@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LCSMobile.View.StartPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="5" x:Name="layout">
+
+            <Label Text="Nutek LCS Mobile" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontFamily="{StaticResource RobotoBold}"></Label>
+            
+
+
+            <AbsoluteLayout VerticalOptions="End" BackgroundColor="Green">
+                <Button x:Name="btnLogin" BackgroundColor="White" TextColor="Lime" Text="Login" CornerRadius="0" FontSize="Large" AbsoluteLayout.LayoutBounds="0,1,.5,1" AbsoluteLayout.LayoutFlags="All" Clicked="btnLogin_Clicked" />
+                <Button x:Name="btnSignup" BackgroundColor="White" TextColor="Lime" Text="Signup" CornerRadius="0" FontSize="Large" AbsoluteLayout.LayoutBounds="1,1,.49,1" AbsoluteLayout.LayoutFlags="All" Clicked="btnSignup_Clicked"/>
+            </AbsoluteLayout>
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>
