@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Validators="clr-namespace:XamarinFormValidator.Validators.Implementations"
+             xmlns:Behaviors="clr-namespace:XamarinFormValidator.Behaviors"
+             xmlns:local="clr-namespace:LCSMobile.ViewModel"
+             mc:Ignorable="d"
+             x:Class="LCSMobile.View.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout  Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+            <StackLayout.Behaviors>
+                <Behaviors:ValidationGroupBehavior x:Name="form"/>
+            </StackLayout.Behaviors>
+           
+            <StackLayout.BindingContext>
+                   <local:LoginPageViewModel/>
+            </StackLayout.BindingContext>
+             
+         
+            <Entry x:Name="Email" Placeholder="Email" Text="{Binding AuthenticateModel.Email, Mode=OneWayToSource}" >
+                <Entry.Behaviors>
+                    <Behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                        <Behaviors:ValidationBehavior.Validators>
+                            <Validators:RequiredValidator />
+                            <Validators:FormatValidator
+                            Message="Email format is wrong" 
+                            Format="Email" />
+                        </Behaviors:ValidationBehavior.Validators>
+                    </Behaviors:ValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <Entry x:Name="Password" Placeholder="Password" IsPassword="True" Text="{Binding AuthenticateModel.Password, Mode=OneWayToSource}">
+                <Entry.Behaviors>
+                    <Behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                        <Behaviors:ValidationBehavior.Validators>
+                            <Validators:RequiredValidator />                            
+                        </Behaviors:ValidationBehavior.Validators>
+                    </Behaviors:ValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
+
+            <ActivityIndicator x:Name="styledActivityIndicator"
+                           Color="LimeGreen"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Fill" 
+                           IsRunning="{Binding LoggingIn}"/>
+            
+            <Label TextColor="{Binding ResultColor}" Text="{Binding Result}"/>
+            <Button Text="Login"   x:Name="btnLogin"  BackgroundColor="LimeGreen" Command="{Binding LoginButtonCommand}"
+                IsEnabled="{Binding Source={x:Reference form}, Path=IsValid}"/>
+            <Label  x:Name="lblRegister" HorizontalTextAlignment="Center" Margin="10">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="LblRegister_Tapped"/>                   
+                </Label.GestureRecognizers>
+                <Label.FormattedText >
+                    <FormattedString>
+                        <Span Text="Register" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+                   
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

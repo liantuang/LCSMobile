@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"            
+             x:Class="LCSMobile.View.SettingPage">
+    <ContentPage.Content >
+        <StackLayout Margin="5, 5, 5, 5">
+            <FlexLayout x:Name="UserProfile" Margin="5, 20, 5, 5"  Direction="Row" JustifyContent="SpaceBetween" BackgroundColor="WhiteSmoke" HeightRequest="50">
+                <FlexLayout.GestureRecognizers>
+                    <TapGestureRecognizer  Tapped="CFXSettingTapGestureRecognizer_Tapped"/>
+                </FlexLayout.GestureRecognizers>
+                <StackLayout Orientation="Horizontal" >
+                    <Image x:Name="imgProfile" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label HorizontalOptions="Start" VerticalTextAlignment="Center" Text="User Setting"/>
+                </StackLayout>
+                <Label Text=">" HorizontalOptions="End" VerticalTextAlignment="Center" FontSize="Medium"/>
+            </FlexLayout>
+
+            <FlexLayout Margin="5" Direction="Row" JustifyContent="SpaceBetween" BackgroundColor="WhiteSmoke">
+                <FlexLayout.GestureRecognizers>
+                    <TapGestureRecognizer  Tapped="TapGestureRecognizer_Tapped"/>
+                </FlexLayout.GestureRecognizers>
+
+                <Label Text="CFX Setting"/>
+                <Label Text=">" FontSize="Medium"/>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

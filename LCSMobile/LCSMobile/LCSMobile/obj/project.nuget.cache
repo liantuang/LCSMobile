@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "io8Zaaf5gQxv+xK/eAa1ibekdPv+ZuubOTS/JBDZN+/2pvHrAfWkHRbdECYyGfGmRccQZ7FHRWNqNkzY0CEczA==",
+  "success": true,
+  "projectFilePath": "/Users/liantuang/Documents/GitHub/LCSMobile/LCSMobile/LCSMobile/LCSMobile/LCSMobile/LCSMobile.csproj",
+  "expectedPackageFiles": [
+    "/Users/liantuang/.nuget/packages/amqpnetlite/2.3.0/amqpnetlite.2.3.0.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/amqpnetlite.core/2.3.0/amqpnetlite.core.2.3.0.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/cfx.cfxsdk.netstandard/1.1.12/cfx.cfxsdk.netstandard.1.1.12.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/sqlite-net-pcl/1.6.292/sqlite-net-pcl.1.6.292.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/sqlitepclraw.bundle_green/1.1.13/sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/sqlitepclraw.core/1.1.13/sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/xamarin.essentials/1.5.2/xamarin.essentials.1.5.2.nupkg.sha512",
+    "/Users/liantuang/.nuget/packages/xamarin.forms/4.5.0.617/xamarin.forms.4.5.0.617.nupkg.sha512"
+  ],
+  "logs": []
+}
